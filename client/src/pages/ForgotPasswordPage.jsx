@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mail, ArrowLeft, Loader2, CheckCircle } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { toast } from 'react-toastify';
 import { authAPI } from '../services/api';
 
 const ForgotPasswordPage = () => {

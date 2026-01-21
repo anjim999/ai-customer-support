@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const API_URL = import.meta.env.VITE_API_URL || '';
 
@@ -54,6 +55,11 @@ api.interceptors.response.use(
                 window.location.href = '/login';
                 return Promise.reject(refreshError);
             }
+        }
+
+        if (error.response?.status !== 401) {
+            const message = error.response?.data?.message || 'Something went wrong';
+            toast.error(message);
         }
 
         return Promise.reject(error);

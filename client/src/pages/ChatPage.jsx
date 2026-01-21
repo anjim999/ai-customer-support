@@ -16,7 +16,7 @@ import {
     Loader2,
     ChevronDown
 } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { toast } from 'react-toastify';
 import useAuthStore from '../stores/authStore';
 import useChatStore from '../stores/chatStore';
 
@@ -127,8 +127,8 @@ const ChatPage = () => {
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     className={`group relative flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all ${currentConversation?._id === conv._id
-                                            ? 'bg-primary-500/20 border border-primary-500/30'
-                                            : 'hover:bg-white/5'
+                                        ? 'bg-primary-500/20 border border-primary-500/30'
+                                        : 'hover:bg-white/5'
                                         }`}
                                     onClick={() => handleSelectConversation(conv._id)}
                                 >
@@ -274,8 +274,8 @@ const ChatPage = () => {
                         >
                             {/* Avatar */}
                             <div className={`flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center ${msg.role === 'user'
-                                    ? 'bg-primary-500'
-                                    : 'bg-gradient-to-br from-purple-500 to-pink-500'
+                                ? 'bg-primary-500'
+                                : 'bg-gradient-to-br from-purple-500 to-pink-500'
                                 }`}>
                                 {msg.role === 'user' ? (
                                     <User className="w-5 h-5 text-white" />
@@ -287,8 +287,8 @@ const ChatPage = () => {
                             {/* Message Bubble */}
                             <div className={`flex-1 max-w-[80%] ${msg.role === 'user' ? 'text-right' : ''}`}>
                                 <div className={`inline-block p-4 rounded-2xl ${msg.role === 'user'
-                                        ? 'bg-primary-500 text-white'
-                                        : 'glass text-white/90'
+                                    ? 'bg-primary-500 text-white'
+                                    : 'glass text-white/90'
                                     }`}>
                                     {msg.role === 'user' ? (
                                         <p>{msg.content}</p>

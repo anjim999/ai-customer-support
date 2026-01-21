@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { Toaster } from 'react-hot-toast';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react';
 import useAuthStore from './stores/authStore';
 
@@ -68,29 +69,17 @@ function App() {
             <div className="particles-bg" />
 
             {/* Toast notifications */}
-            <Toaster
+            <ToastContainer
                 position="top-right"
-                toastOptions={{
-                    duration: 4000,
-                    style: {
-                        background: 'rgba(26, 27, 31, 0.9)',
-                        color: '#fff',
-                        backdropFilter: 'blur(10px)',
-                        border: '1px solid rgba(255, 255, 255, 0.1)',
-                    },
-                    success: {
-                        iconTheme: {
-                            primary: '#667eea',
-                            secondary: '#fff',
-                        },
-                    },
-                    error: {
-                        iconTheme: {
-                            primary: '#f5576c',
-                            secondary: '#fff',
-                        },
-                    },
-                }}
+                autoClose={4000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
             />
 
             <Routes>

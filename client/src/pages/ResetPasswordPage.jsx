@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Lock, Eye, EyeOff, Loader2, Check, X } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { toast } from 'react-toastify';
 import { authAPI } from '../services/api';
 
 const ResetPasswordPage = () => {

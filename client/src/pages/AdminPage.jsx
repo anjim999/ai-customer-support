@@ -18,7 +18,7 @@ import {
     RefreshCw,
     ChevronDown
 } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { toast } from 'react-toastify';
 import { documentAPI, faqAPI } from '../services/api';
 import useAuthStore from '../stores/authStore';
 
@@ -190,8 +190,8 @@ const AdminPage = () => {
                     <button
                         onClick={() => setActiveTab('documents')}
                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all ${activeTab === 'documents'
-                                ? 'bg-primary-500 text-white'
-                                : 'glass hover:bg-white/10 text-white/70'
+                            ? 'bg-primary-500 text-white'
+                            : 'glass hover:bg-white/10 text-white/70'
                             }`}
                     >
                         <FileText className="w-5 h-5" />
@@ -200,8 +200,8 @@ const AdminPage = () => {
                     <button
                         onClick={() => setActiveTab('faqs')}
                         className={`flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all ${activeTab === 'faqs'
-                                ? 'bg-primary-500 text-white'
-                                : 'glass hover:bg-white/10 text-white/70'
+                            ? 'bg-primary-500 text-white'
+                            : 'glass hover:bg-white/10 text-white/70'
                             }`}
                     >
                         <MessageSquareText className="w-5 h-5" />

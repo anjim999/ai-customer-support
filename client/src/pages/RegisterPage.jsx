@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { User, Mail, Lock, Eye, EyeOff, Loader2, Check, X, ArrowRight, ArrowLeft } from 'lucide-react';
-import toast from 'react-hot-toast';
+import { toast } from 'react-toastify';
 import { authAPI } from '../services/api';
 
 const RegisterPage = () => {
