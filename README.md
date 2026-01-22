@@ -179,10 +179,5 @@ db.users.updateOne(
 )
 ```
 
-## 📝 License
-
-MIT License - Feel free to use for any purpose.
-
----
 
 Built with ❤️ for the AI Support Platform Assignment
