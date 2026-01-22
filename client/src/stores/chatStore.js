@@ -179,6 +179,20 @@ const useChatStore = create((set, get) => ({
         });
     },
 
+    // Reset entire store (for logout)
+    resetStore: () => {
+        set({
+            conversations: [],
+            currentConversation: null,
+            messages: [],
+            isLoading: false,
+            isSending: false,
+            isStreaming: false,
+            streamingMessage: '',
+            error: null
+        });
+    },
+
     // Clear error
     clearError: () => set({ error: null })
 }));

@@ -1,0 +1,62 @@
+# TechSupport Pro - Company Knowledge Base
+
+## About Us
+TechSupport Pro is a leading AI-powered customer support platform that helps businesses provide 24/7 automated assistance to their customers. Founded in 2024, we serve over 500 companies worldwide.
+
+## Our Products
+
+### AI Chat Assistant
+- Instant responses to customer queries
+- Natural language understanding
+- Multi-language support (English, Spanish, French, German)
+- Integration with popular CRM systems
+
+### Knowledge Base Manager
+- Upload and manage documents
+- Automatic content indexing
+- Smart search capabilities
+- Version control for documents
+
+### Analytics Dashboard
+- Real-time conversation metrics
+- Customer satisfaction scores
+- Response time tracking
+- Popular topics identification
+
+## Pricing Plans
+
+### Free Plan - $0/month
+- Up to 100 conversations per month
+- 1 team member
+- Basic analytics
+- Email support
+
+### Pro Plan - $49/month
+- Unlimited conversations
+- 5 team members
+- Advanced analytics
+- Priority email support
+- Custom branding
+
+### Enterprise Plan - $199/month
+- Everything in Pro
+- Unlimited team members
+- API access
+- Dedicated account manager
+- 24/7 phone support
+- SSO integration
+
+## Contact Information
+- Email: support@techsupportpro.com
+- Phone: 1-800-TECH-PRO (1-800-832-4776)
+- Hours: Monday - Friday, 9:00 AM - 6:00 PM EST
+- Address: 123 Innovation Drive, San Francisco, CA 94105
+
+## Refund Policy
+We offer a 30-day money-back guarantee on all paid plans. If you're not satisfied with our service, contact our support team for a full refund within 30 days of purchase.
+
+## Technical Requirements
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Stable internet connection
+- JavaScript enabled
+- Cookies enabled for session management

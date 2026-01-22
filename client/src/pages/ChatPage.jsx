@@ -34,7 +34,8 @@ const ChatPage = () => {
         createConversation,
         sendMessage,
         deleteConversation,
-        clearCurrentConversation
+        clearCurrentConversation,
+        resetStore
     } = useChatStore();
 
     const [input, setInput] = useState('');
@@ -92,6 +93,7 @@ const ChatPage = () => {
     };
 
     const handleLogout = async () => {
+        resetStore(); // Clear all chat data before logout
         await logout();
         toast.success('Logged out successfully');
     };
